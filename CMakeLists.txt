@@ -16,6 +16,7 @@ add_executable(main
     src/main.cpp
     src/paddle.cpp
     src/ball.cpp
+    src/brick.cpp
 )
 target_include_directories(main PRIVATE headers)
 target_compile_features(main PRIVATE cxx_std_17)

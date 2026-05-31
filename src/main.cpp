@@ -1,34 +1,47 @@
 ﻿#include <SFML/Graphics.hpp>
 #include <iostream>
 #include<cmath>
+#include<vector>
 
 #include "Header/paddle.h"
 #include "Header/ball.h"
+#include "Header/brick.h"
 
 int main() {
 	unsigned int width = 1280;
 	unsigned int height = 720;
-sf::RenderWindow window(sf::VideoMode({ width, height }), "Brick Breaker");
-window.setFramerateLimit(60);
+	sf::RenderWindow window(sf::VideoMode({ width, height }), "Brick Breaker");
+	window.setFramerateLimit(60);
 
-//Create game objects
-Paddle paddle(static_cast<float>(width), static_cast<float>(height));
-Ball ball(static_cast<float>(width), static_cast<float>(height));
+	//Create game objects
+	Paddle paddle(static_cast<float>(width), static_cast<float>(height));
+	Ball ball(static_cast<float>(width), static_cast<float>(height));
 
-//Game Loop
-	while(window.isOpen()){
-	
+	//Creates Brick
+	std::vector<Brick> bricks;
+	for (int i = 0; i <= width/100; ++i) {
+		for (int j = 0; j <= (height/2.f)/80; ++j) {
+			bricks.emplace_back(sf::Vector2f{
+				 i * 100.f,
+				j * 40.f
+				});
+		}
+	}
+
+	//Game Loop
+	while (window.isOpen()) {
+
 		while (const std::optional event = window.pollEvent()) {
 			if (event->is<sf::Event::Closed>()) {
 				window.close();
 			}
 			else if (const auto* keypress = event->getIf<sf::Event::KeyPressed>()) {
-				if (keypress->scancode == sf::Keyboard::Scancode::Escape){
+				if (keypress->scancode == sf::Keyboard::Scancode::Escape) {
 					window.close();
 				}
 			}
 		}
-		
+
 		paddle.update();
 		ball.update(static_cast<float>(width), static_cast<float>(height));
 
@@ -36,10 +49,21 @@ Ball ball(static_cast<float>(width), static_cast<float>(height));
 			ball.getVelocity().y = -std::abs(ball.getVelocity().y);
 		}
 
+		for (Brick& brick : bricks) {
+			if (!brick.isdestroyed() && brick.getshape().getGlobalBounds().findIntersection(ball.getShape().getGlobalBounds())) {
+				brick.destroy();
+				ball.getVelocity().y = -ball.getVelocity().y;
+				break;
+			}
+		}
+
 
 		// Render
 		window.clear(sf::Color(0x87CEEFFF));
 
+		for (Brick& brick : bricks) {
+			brick.draw(window);
+		}
 		paddle.draw(window);
 		ball.draw(window);
 		//Draw 

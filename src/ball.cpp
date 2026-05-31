@@ -6,7 +6,7 @@ Ball::Ball(float width, float height) {
 	BallShape.setOrigin(BallShape.getGeometricCenter());
 	BallShape.setPosition({ width / 2.f , height / 2.f });
 	BallShape.setFillColor(sf::Color::White);
-	velocity = { 5.f,-5.f };
+	velocity = { 5.f,5.f };
 }
 void Ball::update(float width, float height) {
 	BallShape.move(velocity);
