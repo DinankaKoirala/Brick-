@@ -27,7 +27,7 @@ void Ball::update(float width, float height) {
 		velocity.y = -velocity.y;
 	}
 	//bottom wall
-	else f (position.y + radius >= height) {
+	else if (position.y + radius >= height) {
 		velocity.y = -velocity.y;
 	}
 

@@ -1,5 +1,6 @@
 ﻿#include <SFML/Graphics.hpp>
 #include <iostream>
+#include<cmath>
 
 #include "Header/paddle.h"
 #include "Header/ball.h"
@@ -30,6 +31,10 @@ Ball ball(static_cast<float>(width), static_cast<float>(height));
 		
 		paddle.update();
 		ball.update(static_cast<float>(width), static_cast<float>(height));
+
+		if (ball.getShape().getGlobalBounds().findIntersection(paddle.getShape().getGlobalBounds())) {
+			ball.getVelocity().y = -std::abs(ball.getVelocity().y);
+		}
 
 
 		// Render
