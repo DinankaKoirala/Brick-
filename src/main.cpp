@@ -6,11 +6,6 @@ int main() {
 sf::RenderWindow window(sf::VideoMode({ width, height }), "Brick Breaker");
 window.setFramerateLimit(60);
 
-sf::RectangleShape paddle({ 100.f,20.f });
-paddle.setOrigin(paddle.getSize() / 2.f);
-paddle.setPosition({ width / 2.f, (height-10)*1.f});
-
-
 //Game Loop
 	while(window.isOpen()){
 	
@@ -24,7 +19,6 @@ paddle.setPosition({ width / 2.f, (height-10)*1.f});
 				}
 			}
 		}
-		paddle.move({ -1.f,0.f });
 
 
 		// Render
@@ -32,7 +26,6 @@ paddle.setPosition({ width / 2.f, (height-10)*1.f});
 
 
 		//Draw 
-		window.draw(paddle);
 		window.display();
 
 	}
