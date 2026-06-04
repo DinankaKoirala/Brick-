@@ -28,7 +28,7 @@ void Ball::update(float width, float height) {
 	}
 	//bottom wall
 	else if (position.y + radius >= height) {
-		velocity.y = -velocity.y;
+		std::exit(EXIT_FAILURE);
 	}
 
 }
