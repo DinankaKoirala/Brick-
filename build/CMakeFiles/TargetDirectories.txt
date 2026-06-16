@@ -1,0 +1,3 @@
+/home/dinanka/Desktop/Brick-/build/CMakeFiles/main.dir
+/home/dinanka/Desktop/Brick-/build/CMakeFiles/edit_cache.dir
+/home/dinanka/Desktop/Brick-/build/CMakeFiles/rebuild_cache.dir

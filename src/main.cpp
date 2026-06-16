@@ -7,11 +7,18 @@
 #include "Header/ball.h"
 #include "Header/brick.h"
 
+enum class GameState {
+    Playing,
+    Dead
+};
+
 int main() {
 	unsigned int width = 1280;
 	unsigned int height = 720;
 	sf::RenderWindow window(sf::VideoMode({ width, height }), "Brick Breaker");
 	window.setFramerateLimit(60);
+
+	GameState currrentstate = GameState::Playing;
 
 	//Create game objects
 	Paddle paddle(static_cast<float>(width), static_cast<float>(height));
@@ -42,12 +49,21 @@ int main() {
 			}
 		}
 
+		if(currrentstate == GameState::Playing){
 		paddle.update();
 		ball.update(static_cast<float>(width), static_cast<float>(height));
 
 		if (ball.getShape().getGlobalBounds().findIntersection(paddle.getShape().getGlobalBounds())) {
 			ball.getVelocity().y = -std::abs(ball.getVelocity().y);
 		}
+
+		sf::Vector2f ballpos = ball.getShape().getPosition();
+		float ballrad = ball.getShape().getRadius();
+
+		if (ballpos.y + ballrad >= height) {
+		currrentstate = GameState::Dead;
+	}
+
 
 		for (Brick& brick : bricks) {
 			if (!brick.isdestroyed() && brick.getshape().getGlobalBounds().findIntersection(ball.getShape().getGlobalBounds())) {
@@ -56,6 +72,9 @@ int main() {
 				break;
 			}
 		}
+		
+}
+		
 
 
 		// Render
