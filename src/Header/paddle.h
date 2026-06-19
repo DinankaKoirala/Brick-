@@ -14,6 +14,7 @@ public:
 
 	void update();
 	void draw(sf::RenderWindow& window);
+	void reset(float width, float height);
 
 	sf::RectangleShape& getShape();
 

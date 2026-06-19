@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/main.dir/link.d"
+  "CMakeFiles/main.dir/src/DeathScreen.cpp.o"
+  "CMakeFiles/main.dir/src/DeathScreen.cpp.o.d"
   "CMakeFiles/main.dir/src/ball.cpp.o"
   "CMakeFiles/main.dir/src/ball.cpp.o.d"
   "CMakeFiles/main.dir/src/brick.cpp.o"

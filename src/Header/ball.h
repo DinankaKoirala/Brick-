@@ -12,6 +12,7 @@ public:
 
 	void update(float width, float height);
 	void draw(sf::RenderWindow& window);
+	void reset(float width, float height);
 
 	sf::CircleShape& getShape();
 	sf::Vector2f& getVelocity();

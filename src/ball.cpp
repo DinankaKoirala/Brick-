@@ -40,3 +40,8 @@ sf::CircleShape& Ball::getShape() {
 void Ball::draw(sf::RenderWindow& window) {
 	window.draw(BallShape);
 }
+
+void Ball::reset(float width, float height) {
+    BallShape.setPosition({width / 2.f, height / 2.f});
+    velocity = {5.f, 5.f};
+}

@@ -360,4 +360,43 @@ MigrationBackup/
 .ionide/
 
 # Fody - auto-generated XML schema
-FodyWeavers.xsd
+FodyWeavers.xsdbuild/
+
+# Build directory (CMake)
+build/
+cmake-build-*/
+
+# Compiled output
+*.o
+*.a
+*.so
+*.out
+*.exe
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+# Editor - Neovim/Vim
+*.swp
+*.swo
+*~
+.cache/
+.clangd/
+
+# Editor - VSCode
+.vscode/
+
+# Linux system files
+.DS_Store
+Thumbs.db
+
+# Game assets you don't want tracked (optional)
+# *.ttf   ← comment out if you DO want fonts tracked
+# assets/ ← comment out if you DO want assets tracked

@@ -8,10 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/dinanka/Desktop/Brick-/src/ball.cpp" "CMakeFiles/main.dir/src/ball.cpp.o" "gcc" "CMakeFiles/main.dir/src/ball.cpp.o.d"
-  "/home/dinanka/Desktop/Brick-/src/brick.cpp" "CMakeFiles/main.dir/src/brick.cpp.o" "gcc" "CMakeFiles/main.dir/src/brick.cpp.o.d"
-  "/home/dinanka/Desktop/Brick-/src/main.cpp" "CMakeFiles/main.dir/src/main.cpp.o" "gcc" "CMakeFiles/main.dir/src/main.cpp.o.d"
-  "/home/dinanka/Desktop/Brick-/src/paddle.cpp" "CMakeFiles/main.dir/src/paddle.cpp.o" "gcc" "CMakeFiles/main.dir/src/paddle.cpp.o.d"
+  "/home/dinankakoirala/Desktop/Brick-/src/DeathScreen.cpp" "CMakeFiles/main.dir/src/DeathScreen.cpp.o" "gcc" "CMakeFiles/main.dir/src/DeathScreen.cpp.o.d"
+  "/home/dinankakoirala/Desktop/Brick-/src/ball.cpp" "CMakeFiles/main.dir/src/ball.cpp.o" "gcc" "CMakeFiles/main.dir/src/ball.cpp.o.d"
+  "/home/dinankakoirala/Desktop/Brick-/src/brick.cpp" "CMakeFiles/main.dir/src/brick.cpp.o" "gcc" "CMakeFiles/main.dir/src/brick.cpp.o.d"
+  "/home/dinankakoirala/Desktop/Brick-/src/main.cpp" "CMakeFiles/main.dir/src/main.cpp.o" "gcc" "CMakeFiles/main.dir/src/main.cpp.o.d"
+  "/home/dinankakoirala/Desktop/Brick-/src/paddle.cpp" "CMakeFiles/main.dir/src/paddle.cpp.o" "gcc" "CMakeFiles/main.dir/src/paddle.cpp.o.d"
   "" "main" "gcc" "CMakeFiles/main.dir/link.d"
   )
 

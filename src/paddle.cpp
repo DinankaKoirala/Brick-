@@ -25,3 +25,6 @@ sf::RectangleShape& Paddle::getShape() {
 void Paddle::draw(sf::RenderWindow& window) {
 	window.draw(PaddleShape);
 }
+void Paddle::reset(float width, float height) {
+    PaddleShape.setPosition({width / 2.f, (height - 10) * 1.f});
+}

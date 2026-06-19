@@ -1,66 +1,80 @@
 main: \
-  /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o \
-  /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o \
-  /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o \
+  /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o \
+  /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o \
+  /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o \
   CMakeFiles/main.dir/src/main.cpp.o \
   CMakeFiles/main.dir/src/paddle.cpp.o \
   CMakeFiles/main.dir/src/ball.cpp.o \
   CMakeFiles/main.dir/src/brick.cpp.o \
-  /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.3.0.2 \
-  /usr/lib/x86_64-linux-gnu/libsfml-window.so.3.0.2 \
-  /usr/lib/x86_64-linux-gnu/libsfml-system.so.3.0.2 \
-  /usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so \
-  /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libm.so \
-  /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libm.so \
-  /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libm.so \
-  /usr/lib/x86_64-linux-gnu/libm.so.6 \
-  /usr/lib/x86_64-linux-gnu/libmvec.so.1 \
-  /usr/lib/gcc/x86_64-linux-gnu/15/libgcc_s.so \
-  /usr/lib/gcc/x86_64-linux-gnu/15/libgcc_s.so \
-  /usr/lib/gcc/x86_64-linux-gnu/15/libgcc_s.so \
-  /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libgcc_s.so.1 \
-  /usr/lib/gcc/x86_64-linux-gnu/15/libgcc.a \
-  /usr/lib/gcc/x86_64-linux-gnu/15/libgcc.a \
-  /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libc.so \
-  /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libc.so \
-  /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libc.so \
-  /usr/lib/x86_64-linux-gnu/libc.so.6 \
-  /usr/lib/x86_64-linux-gnu/libc_nonshared.a \
+  CMakeFiles/main.dir/src/DeathScreen.cpp.o \
+  _deps/sfml-build/lib/libsfml-graphics.a \
+  _deps/sfml-build/lib/libsfml-window.a \
+  /usr/lib64/libXrandr.so \
+  /usr/lib64/libXcursor.so \
+  /usr/lib64/libXrender.so \
+  /usr/lib64/libXfixes.so \
+  /usr/lib64/libXi.so \
+  /usr/lib64/libXext.so \
+  /usr/lib64/libX11.so \
+  _deps/sfml-build/lib/libsfml-system.a \
+  /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/librt.a \
+  /usr/lib64/libGL.so \
+  /usr/lib64/libudev.so \
+  /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/libdl.a \
+  /usr/lib64/libfreetype.so \
+  /usr/lib64/libharfbuzz.so \
+  /usr/lib/gcc/x86_64-redhat-linux/16/libstdc++.so \
+  /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/libm.so \
+  /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/libm.so \
+  /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/libm.so \
+  /lib64/libm.so.6 \
+  /lib64/libmvec.so.1 \
+  /usr/lib/gcc/x86_64-redhat-linux/16/libgcc_s.so \
+  /usr/lib/gcc/x86_64-redhat-linux/16/libgcc_s.so \
+  /usr/lib/gcc/x86_64-redhat-linux/16/libgcc_s.so \
+  /lib64/libgcc_s.so.1 \
+  /usr/lib/gcc/x86_64-redhat-linux/16/libgcc.a \
+  /usr/lib/gcc/x86_64-redhat-linux/16/libgcc.a \
+  /usr/lib/gcc/x86_64-redhat-linux/16/libatomic_asneeded.so \
+  /usr/lib/gcc/x86_64-redhat-linux/16/libatomic_asneeded.so \
+  /usr/lib/gcc/x86_64-redhat-linux/16/libatomic_asneeded.so \
+  /usr/lib/gcc/x86_64-redhat-linux/16/libatomic.so \
+  /usr/lib/gcc/x86_64-redhat-linux/16/libatomic.so \
+  /usr/lib/gcc/x86_64-redhat-linux/16/libatomic.so \
+  /usr/lib64/libatomic.so.1.2.0 \
+  /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/libc.so \
+  /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/libc.so \
+  /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/libc.so \
+  /lib64/libc.so.6 \
+  /usr/lib64/libc_nonshared.a \
   /lib64/ld-linux-x86-64.so.2 \
-  /usr/lib/gcc/x86_64-linux-gnu/15/libgcc_s.so \
-  /usr/lib/gcc/x86_64-linux-gnu/15/libgcc_s.so \
-  /usr/lib/gcc/x86_64-linux-gnu/15/libgcc_s.so \
-  /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libgcc_s.so.1 \
-  /usr/lib/gcc/x86_64-linux-gnu/15/libgcc.a \
-  /usr/lib/gcc/x86_64-linux-gnu/15/libgcc.a \
-  /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o \
-  /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o \
-  /usr/lib/x86_64-linux-gnu/libfreetype.so.6 \
-  /usr/lib/x86_64-linux-gnu/libstb.so.0 \
-  /usr/lib/x86_64-linux-gnu/libm.so.6 \
-  /usr/lib/x86_64-linux-gnu/libX11.so.6 \
-  /usr/lib/x86_64-linux-gnu/libXrandr.so.2 \
-  /usr/lib/x86_64-linux-gnu/libXcursor.so.1 \
-  /usr/lib/x86_64-linux-gnu/libXi.so.6 \
-  /usr/lib/x86_64-linux-gnu/libudev.so.1 \
+  /usr/lib/gcc/x86_64-redhat-linux/16/libgcc_s.so \
+  /usr/lib/gcc/x86_64-redhat-linux/16/libgcc_s.so \
+  /usr/lib/gcc/x86_64-redhat-linux/16/libgcc_s.so \
+  /lib64/libgcc_s.so.1 \
+  /usr/lib/gcc/x86_64-redhat-linux/16/libgcc.a \
+  /usr/lib/gcc/x86_64-redhat-linux/16/libgcc.a \
+  /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o \
+  /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o \
+  /usr/lib64/libxcb.so.1 \
+  /usr/lib64/libGLX.so.0 \
+  /usr/lib64/libGLdispatch.so.0 \
+  /usr/lib64/libz.so.1 \
+  /usr/lib64/libbz2.so.1 \
+  /usr/lib64/libpng16.so.16 \
+  /usr/lib64/libbrotlidec.so.1 \
+  /usr/lib64/libglib-2.0.so.0 \
+  /usr/lib64/libgraphite2.so.3 \
   /lib64/ld-linux-x86-64.so.2 \
-  /usr/lib/x86_64-linux-gnu/libz.so.1 \
-  /usr/lib/x86_64-linux-gnu/libbz2.so.1.0 \
-  /usr/lib/x86_64-linux-gnu/libpng16.so.16 \
-  /usr/lib/x86_64-linux-gnu/libbrotlidec.so.1 \
-  /usr/lib/x86_64-linux-gnu/libxcb.so.1 \
-  /usr/lib/x86_64-linux-gnu/libXext.so.6 \
-  /usr/lib/x86_64-linux-gnu/libXrender.so.1 \
-  /usr/lib/x86_64-linux-gnu/libXfixes.so.3 \
-  /usr/lib/x86_64-linux-gnu/libbrotlicommon.so.1 \
-  /usr/lib/x86_64-linux-gnu/libXau.so.6 \
-  /usr/lib/x86_64-linux-gnu/libXdmcp.so.6
+  /usr/lib64/libXau.so.6 \
+  /usr/lib64/libbrotlicommon.so.1 \
+  /usr/lib64/libpcre2-8.so.0
 
-/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o:
+/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o:
+/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o:
+/usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o:
 
 CMakeFiles/main.dir/src/main.cpp.o:
 
@@ -70,100 +84,128 @@ CMakeFiles/main.dir/src/ball.cpp.o:
 
 CMakeFiles/main.dir/src/brick.cpp.o:
 
-/usr/lib/x86_64-linux-gnu/libsfml-graphics.so.3.0.2:
+CMakeFiles/main.dir/src/DeathScreen.cpp.o:
 
-/usr/lib/x86_64-linux-gnu/libsfml-window.so.3.0.2:
+_deps/sfml-build/lib/libsfml-graphics.a:
 
-/usr/lib/x86_64-linux-gnu/libsfml-system.so.3.0.2:
+_deps/sfml-build/lib/libsfml-window.a:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so:
+/usr/lib64/libXrandr.so:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libm.so:
+/usr/lib64/libXcursor.so:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libm.so:
+/usr/lib64/libXrender.so:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libm.so:
+/usr/lib64/libXfixes.so:
 
-/usr/lib/x86_64-linux-gnu/libm.so.6:
+/usr/lib64/libXi.so:
 
-/usr/lib/x86_64-linux-gnu/libmvec.so.1:
+/usr/lib64/libXext.so:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/libgcc_s.so:
+/usr/lib64/libX11.so:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/libgcc_s.so:
+_deps/sfml-build/lib/libsfml-system.a:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/libgcc_s.so:
+/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/librt.a:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libgcc_s.so.1:
+/usr/lib64/libGL.so:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/libgcc.a:
+/usr/lib64/libudev.so:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/libgcc.a:
+/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/libdl.a:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libc.so:
+/usr/lib64/libfreetype.so:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libc.so:
+/usr/lib64/libharfbuzz.so:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libc.so:
+/usr/lib/gcc/x86_64-redhat-linux/16/libstdc++.so:
 
-/usr/lib/x86_64-linux-gnu/libc.so.6:
+/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/libm.so:
 
-/usr/lib/x86_64-linux-gnu/libc_nonshared.a:
+/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/libm.so:
+
+/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/libm.so:
+
+/lib64/libm.so.6:
+
+/lib64/libmvec.so.1:
+
+/usr/lib/gcc/x86_64-redhat-linux/16/libgcc_s.so:
+
+/usr/lib/gcc/x86_64-redhat-linux/16/libgcc_s.so:
+
+/usr/lib/gcc/x86_64-redhat-linux/16/libgcc_s.so:
+
+/lib64/libgcc_s.so.1:
+
+/usr/lib/gcc/x86_64-redhat-linux/16/libgcc.a:
+
+/usr/lib/gcc/x86_64-redhat-linux/16/libgcc.a:
+
+/usr/lib/gcc/x86_64-redhat-linux/16/libatomic_asneeded.so:
+
+/usr/lib/gcc/x86_64-redhat-linux/16/libatomic_asneeded.so:
+
+/usr/lib/gcc/x86_64-redhat-linux/16/libatomic_asneeded.so:
+
+/usr/lib/gcc/x86_64-redhat-linux/16/libatomic.so:
+
+/usr/lib/gcc/x86_64-redhat-linux/16/libatomic.so:
+
+/usr/lib/gcc/x86_64-redhat-linux/16/libatomic.so:
+
+/usr/lib64/libatomic.so.1.2.0:
+
+/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/libc.so:
+
+/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/libc.so:
+
+/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/libc.so:
+
+/lib64/libc.so.6:
+
+/usr/lib64/libc_nonshared.a:
 
 /lib64/ld-linux-x86-64.so.2:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/libgcc_s.so:
+/usr/lib/gcc/x86_64-redhat-linux/16/libgcc_s.so:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/libgcc_s.so:
+/usr/lib/gcc/x86_64-redhat-linux/16/libgcc_s.so:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/libgcc_s.so:
+/usr/lib/gcc/x86_64-redhat-linux/16/libgcc_s.so:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libgcc_s.so.1:
+/lib64/libgcc_s.so.1:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/libgcc.a:
+/usr/lib/gcc/x86_64-redhat-linux/16/libgcc.a:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/libgcc.a:
+/usr/lib/gcc/x86_64-redhat-linux/16/libgcc.a:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o:
+/usr/lib/gcc/x86_64-redhat-linux/16/crtend.o:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o:
+/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o:
 
-/usr/lib/x86_64-linux-gnu/libfreetype.so.6:
+/usr/lib64/libxcb.so.1:
 
-/usr/lib/x86_64-linux-gnu/libstb.so.0:
+/usr/lib64/libGLX.so.0:
 
-/usr/lib/x86_64-linux-gnu/libm.so.6:
+/usr/lib64/libGLdispatch.so.0:
 
-/usr/lib/x86_64-linux-gnu/libX11.so.6:
+/usr/lib64/libz.so.1:
 
-/usr/lib/x86_64-linux-gnu/libXrandr.so.2:
+/usr/lib64/libbz2.so.1:
 
-/usr/lib/x86_64-linux-gnu/libXcursor.so.1:
+/usr/lib64/libpng16.so.16:
 
-/usr/lib/x86_64-linux-gnu/libXi.so.6:
+/usr/lib64/libbrotlidec.so.1:
 
-/usr/lib/x86_64-linux-gnu/libudev.so.1:
+/usr/lib64/libglib-2.0.so.0:
+
+/usr/lib64/libgraphite2.so.3:
 
 /lib64/ld-linux-x86-64.so.2:
 
-/usr/lib/x86_64-linux-gnu/libz.so.1:
+/usr/lib64/libXau.so.6:
 
-/usr/lib/x86_64-linux-gnu/libbz2.so.1.0:
+/usr/lib64/libbrotlicommon.so.1:
 
-/usr/lib/x86_64-linux-gnu/libpng16.so.16:
-
-/usr/lib/x86_64-linux-gnu/libbrotlidec.so.1:
-
-/usr/lib/x86_64-linux-gnu/libxcb.so.1:
-
-/usr/lib/x86_64-linux-gnu/libXext.so.6:
-
-/usr/lib/x86_64-linux-gnu/libXrender.so.1:
-
-/usr/lib/x86_64-linux-gnu/libXfixes.so.3:
-
-/usr/lib/x86_64-linux-gnu/libbrotlicommon.so.1:
-
-/usr/lib/x86_64-linux-gnu/libXau.so.6:
-
-/usr/lib/x86_64-linux-gnu/libXdmcp.so.6:
+/usr/lib64/libpcre2-8.so.0:
