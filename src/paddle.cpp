@@ -3,7 +3,7 @@
 Paddle::Paddle(float width, float height) {
 	PaddleShape.setSize({ 100.f,20.f });
 	PaddleShape.setOrigin(PaddleShape.getSize() / 2.f);
-	PaddleShape.setPosition({ width / 2.f, (height - 10) * 1.f });
+	PaddleShape.setPosition({ width / 2.f, (height - 20) * 1.f });
 	speed = 10.f;
 	PaddleShape.setFillColor(sf::Color::Red);
 }
@@ -26,5 +26,5 @@ void Paddle::draw(sf::RenderWindow& window) {
 	window.draw(PaddleShape);
 }
 void Paddle::reset(float width, float height) {
-    PaddleShape.setPosition({width / 2.f, (height - 10) * 1.f});
+    PaddleShape.setPosition({width / 2.f, height - 30.f});
 }

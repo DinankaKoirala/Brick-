@@ -14,8 +14,8 @@ enum class GameState {
 };
 
 int main() {
-	unsigned int width = 1920;
-	unsigned int height = 1080;
+	unsigned int width = 1280;
+	unsigned int height = 720;
 	sf::RenderWindow window(sf::VideoMode({ width, height }), "Brick Breaker");
 	window.setFramerateLimit(60);
 
